@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="presentation">
+        <div id="logo">
+            <img src="resources/odin-lined.png" alt="">
+            <p>Odin</p>
+        </div>
+        <div id="credits">
+            <p>Photo by <a href="https://unsplash.com/es/fotos/planta-de-hoja-verde-en-fotografia-de-primer-plano-25xggax4bSA" target="_blank">Halie West</a> on <a href="https://unsplash.com/es" target="_blank">Unsplash</a></p>
+        </div>
+        <img src="resources/backgroundImage.avif" id="backgroundImage">
+    </div>
+
+    <div id="rightContainer">
+        <div id="text">
+            <p>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+                <br>Sign up <em>now</em> to get started</p>
+
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div id="form">
+            <form id="dataEntry" action="" method="post">
+
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                </fieldset>
+
+                <div id="columns">
+                    <div id="firstCol">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div id="secondCol">
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit">Create account</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
