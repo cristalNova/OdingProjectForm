@@ -7,7 +7,8 @@ The reference sign-up page to be replicated is:
 
 ![Sign up page](https://cdn.statically.io/gh/TheOdinProject/curriculum/afdbabfab03fbc34783c6b6f3920aba4a4d3b935/intermediate_html_css/forms/project_sign_up_form/imgs/sign-up-form.png)
 
-## About the coder and project
+## About the project
 
-This project was created as part of my learning journey in web development.  
-I'm currently a beginner, exploring and practicing **HTML**, **CSS**, and **JavaScript**. 
+This project was exclusively created as part of a learning journey of HTML and CSS. 
+It doesn't include JavaScript validations or any other JavaScript-based functionality.
+
