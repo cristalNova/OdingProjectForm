@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="presentation">
@@ -19,55 +22,58 @@
 
     <div id="rightContainer">
         <div id="text">
-            <p>This is not a real online service! You know you need something
+            <p><strong>This is not a real online service! You know you need something
             like this in your life to help you realize your deepest dreams.
-                <br>Sign up <em>now</em> to get started</p>
+                <br>Sign up <em>now</em> to get started.</strong></p>
 
-            <p>You <em>know</em> you want to.</p>
+            <p><strong>You <em>know</em> you want to.</strong></p>
         </div>
 
         <div id="form">
             <form id="dataEntry" action="" method="post">
 
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                </fieldset>
+                <div id="whiteSquare">
+                    <p><strong>Let's do this!</strong></p>
 
-                <div id="columns">
-                    <div id="firstCol">
-                        <div>
-                            <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    <div id="columns">
+                        <div id="firstCol">
+                            <div>
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" id="firstName" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password">
-                        </div>
-                    </div>
 
-                    <div id="secondCol">
-                        <div>
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-                        </div>
-                        <div>
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
-                        </div>
-                        <div>
-                            <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                        <div id="secondCol">
+                            <div>
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" id="lastName" required>
+                            </div>
+                            <div>
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                            </div>
+                            <div>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" name="confirmPassword" id="confirmPassword" required>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <button type="submit" id="submit">Create account</button>
+                <div id="button">
+                    <button type="submit" id="submit">Create account</button>
+                </div>
             </form>
         </div>
+        <p>Already have an account? <a href=""><strong>Log in</strong></a></p>
     </div>
 
 </body>
